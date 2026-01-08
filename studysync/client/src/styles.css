@@ -1,0 +1,86 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: #111;
+  background: #f6f7f9;
+}
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+.nav {
+  background: #111827;
+  color: #fff;
+  padding: 16px;
+}
+.nav h1 { font-size: 18px; margin: 0 0 12px; }
+.nav a {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 8px;
+  color: #e5e7eb;
+  margin: 4px 0;
+}
+.nav a.active { background: #1f2937; color: #fff; }
+.content { padding: 20px; }
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+}
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.row > * { flex: 0 0 auto; }
+input, select, textarea, button {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+}
+textarea { width: 100%; min-height: 120px; }
+button {
+  border: 1px solid #111827;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+button.secondary {
+  background: #fff;
+  color: #111827;
+}
+button.danger {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+.muted { color: #6b7280; font-size: 13px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pill { display: inline-block; padding: 4px 10px; border-radius: 999px; border: 1px solid #e5e7eb; font-size: 12px; }
+.banner {
+  position: sticky;
+  top: 0;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.list { display: grid; gap: 10px; }
+.item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+.item:hover { border-color: #c7ccd3; }
+.kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.kpi .box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; }
+.small { font-size: 12px; }
